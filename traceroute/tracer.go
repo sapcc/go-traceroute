@@ -274,7 +274,7 @@ func newSession(t *Tracer, ip net.IP) *Session {
 
 // Ping sends single ICMP packet with specified TTL.
 func (s *Session) Ping(ttl int) error {
-	req, err := s.t.sendRequest(s.ip, ttl+1)
+	req, err := s.t.sendRequest(s.ip, ttl)
 	if err != nil {
 		return err
 	}
