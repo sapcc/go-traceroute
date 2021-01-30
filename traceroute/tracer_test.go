@@ -2,7 +2,7 @@ package traceroute_test
 
 import (
 	"context"
-	"github.com/pixelbender/go-traceroute/traceroute"
+	"github.com/sapcc/go-traceroute/traceroute"
 	"net"
 	"testing"
 	"time"
